@@ -44,7 +44,7 @@ export default {
   },
   beforeMount() {
     bus.$on("openDrawer", () => {
-      this.drawer = true;
+      this.drawer = !this.drawer;
     });
   }
 };

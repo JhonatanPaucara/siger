@@ -1,16 +1,18 @@
 <template>
   <div>
-    <session-tool-bar />
     <Menu />
-    <v-container fluid>
-      <v-layout wrap>
-        <v-flex pa-2 xs12 sm6 md4 v-for="(variable,i) in variables" :key="i">
-          <v-card>
-            <v-card-title>{{variable}}</v-card-title>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
+    <session-tool-bar />
+    <v-content>
+      <v-container fluid>
+        <v-layout wrap>
+          <v-flex pa-2 xs12 sm6 md4 v-for="(variable,i) in variables" :key="i">
+            <v-card>
+              <v-card-title>{{variable}}</v-card-title>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
   </div>
 </template>
 

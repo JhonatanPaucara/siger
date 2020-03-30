@@ -7,10 +7,17 @@ import SignUpForm from "./views/SignUpForm.vue";
 import SignInForm from "./views/SignInForm.vue";
 import ResetForm from "./views/ResetForm.vue";
 import Home from "./views/Home.vue";
+import VarList from "./components/VarList";
 const routes = [
   {
     path: "/",
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: "",
+        component: VarList
+      }
+    ]
   },
   {
     path: "/signup",
